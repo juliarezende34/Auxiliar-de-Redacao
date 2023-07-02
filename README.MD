@@ -31,7 +31,7 @@ Levando em consideração que a publicação dos resultados de pesquisa é um es
 O objetivo deste trabalho consiste em especificar, projetar e implementar um sistema que facilite o processo de redação. Para alcançar esse objetivo, é fundamental realizar um cuidadoso projeto das estruturas de dados e dos algoritmos correspondentes, com o intuito de garantir a eficiência do sistema na prática.
 
 <strong><h4>Condições impostas: </h4></strong>
-- A princípio este código reealiza a leitura de um arquivo de entrada intitulado ```entrada.txt```, o qual contém o texto a ser analisado.
+- A princípio este código realiza a leitura de um arquivo de entrada intitulado ```entrada.txt```, o qual contém o texto a ser analisado.
 - As sentenças são definidas pelos sinais de pontuação (".", "?", "!").
 - Cada parágrafo é separado por uma linha em branco.
 - Existe um arquivo de ```stop words``` para análise. Sendo as stop words artigos e conjunções que podem ser alteradas de acordo com a preferência do usuário.
@@ -45,7 +45,8 @@ O objetivo deste trabalho consiste em especificar, projetar e implementar um sis
 - <strong>functions.hpp:</strong> Declaração das funções.
 - <strong>header.cpp:</strong> Inclusão das bibliotecas e arquivos utilizados.
 - <strong>functions.cpp:</strong> Desenvolvimento das funções. 
-- <strong>aho.hpp:</strong> Implementação da estrutura Aho Corasick.
+- <strong>aho.hpp:</strong> Assinatura da estrutura Aho Corasick.
+- <strong>aho.cpp:</strong> Implementação da estrutura Aho Corasick.
 - <strong>Output.txt:</strong> A saída do programa.
 - <strong>data/entrada.txt:</strong> Texto de entrada.
 - <strong>data/stopwords.txt:</strong> Stop words, como por exemplo, para artigo (a, o, as,os) e para conjunções (e, ou).
@@ -184,7 +185,7 @@ A saída deve atender os seguintes critérios:
 <h3><b>Tempo de execução</b></h3>
 47.8589 milisegundos.
 
-Para analisar o custo assistótico do Auxiliar de Redação implementado neste trabalho, verificar cada função e manipulação seria extremamente trabalhoso e impreciso, portanto definiu-se que a melhor forma de realizar essa análise seria observar a relação entre o número de linhas da entrada e o tempo de execução. Obteve-se como resultado a seguinte tabela:
+Para analisar o custo assistótico do Auxiliar de Redação implementado neste trabalho, verificar cada função e manipulação seria extremamente trabalhoso e impreciso, portanto definiu-se que a melhor forma de realizar essa análise seria observar a relação entre o número de linhas da entrada e o tempo de execução, medidos com a biblioteca ```time.h```. Obteve-se como resultado a seguinte tabela:
 
  | Número de linhas                |  Tempo de execução (ms)    |                     
  | --------------------------------| ---------------------------|
